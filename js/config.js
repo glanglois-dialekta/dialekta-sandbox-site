@@ -1,6 +1,6 @@
 // Configuration globale du site
-// IMPORTANT : remplacer gtmId par l'ID du conteneur GTM sandbox (format GTM-TPZQD2PT).
-// Le même ID doit aussi être remplacé dans les balises <noscript> de chaque page HTML
+// L'ID GTM ci-dessous est celui du conteneur sandbox de formation. Pour en
+// changer, remplacer aussi l'ID dans les balises <noscript> de chaque page HTML
 // (voir README.md pour une commande qui fait tout d'un coup).
 window.BB_CONFIG = {
   gtmId: 'GTM-TPZQD2PT',
