@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caisse | Brûlerie Boréale</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script>
+<script src="js/tracking.js"></script>
+<script>BB.pageMeta('caisse');</script>
+<script src="js/gtm-loader.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">Brûlerie&nbsp;<span>Boréale</span></a>
+    <nav class="main-nav">
+      <a href="boutique.html">Boutique</a>
+      <a href="blogue.html">Blogue</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="search-form" action="boutique.html" method="get">
+      <input type="search" name="q" placeholder="Rechercher un café..." aria-label="Rechercher">
+    </form>
+    <div class="header-actions">
+      <a href="compte.html" id="account-link">Compte</a>
+      <a href="panier.html" class="cart-link">Panier <span class="cart-badge" id="cart-badge" hidden>0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1>Caisse</h1>
+  <div class="checkout-layout">
+    <div id="checkout-steps">
+      <div class="checkout-step">
+        <h2>1. Coordonnées et adresse de livraison</h2>
+        <form id="form-contact">
+          <div class="form-grid">
+            <div><label for="co-prenom">Prénom</label><input id="co-prenom" required autocomplete="given-name"></div>
+            <div><label for="co-nom">Nom</label><input id="co-nom" required autocomplete="family-name"></div>
+            <div class="full"><label for="co-courriel">Courriel</label><input id="co-courriel" type="email" required autocomplete="email"></div>
+            <div class="full"><label for="co-adresse">Adresse</label><input id="co-adresse" required autocomplete="street-address"></div>
+            <div><label for="co-ville">Ville</label><input id="co-ville" required autocomplete="address-level2"></div>
+            <div><label for="co-province">Province</label>
+              <select id="co-province">
+                <option>Québec</option><option>Ontario</option><option>Nouveau-Brunswick</option><option>Autre</option>
+              </select>
+            </div>
+            <div><label for="co-postal">Code postal</label><input id="co-postal" required autocomplete="postal-code" placeholder="G7H 1A1"></div>
+          </div>
+          <button type="submit" class="btn btn-accent">Continuer vers la livraison</button>
+        </form>
+      </div>
+
+      <div class="checkout-step">
+        <h2>2. Mode de livraison</h2>
+        <form id="form-shipping">
+          <div class="radio-group">
+            <label class="radio-option"><input type="radio" name="shipping" value="standard" checked>
+              <span id="standard-label">Standard (3 à 5 jours ouvrables) - 7,99 $</span></label>
+            <label class="radio-option"><input type="radio" name="shipping" value="express">
+              <span>Express (1 à 2 jours ouvrables) - 14,99 $</span></label>
+          </div>
+          <button type="submit" class="btn btn-accent">Continuer vers le paiement</button>
+          <a href="#" data-goto-step="1" class="btn-link">Modifier mes coordonnées</a>
+        </form>
+      </div>
+
+      <div class="checkout-step">
+        <h2>3. Paiement</h2>
+        <form id="form-payment">
+          <div class="radio-group">
+            <label class="radio-option"><input type="radio" name="payment" value="carte_credit" checked>
+              <span>Carte de crédit</span></label>
+            <label class="radio-option"><input type="radio" name="payment" value="paypal">
+              <span>PayPal</span></label>
+          </div>
+          <div class="form-grid">
+            <div class="full"><label for="cc-num">Numéro de carte (fictif)</label>
+              <input id="cc-num" placeholder="4242 4242 4242 4242" autocomplete="off"></div>
+            <div><label for="cc-exp">Expiration</label><input id="cc-exp" placeholder="12/29" autocomplete="off"></div>
+            <div><label for="cc-cvv">CVV</label><input id="cc-cvv" placeholder="123" autocomplete="off"></div>
+          </div>
+          <p><small>Aucun paiement réel n'est traité : ce site est un environnement de pratique.</small></p>
+          <button type="submit" class="btn btn-accent btn-lg">Confirmer la commande</button>
+          <a href="#" data-goto-step="2" class="btn-link">Modifier la livraison</a>
+        </form>
+      </div>
+    </div>
+
+    <aside id="order-summary"></aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>Brûlerie Boréale</h3>
+      <p>Torréfacteur artisanal<br>412, rue Racine Est, Chicoutimi (Québec)<br>Café de spécialité torréfié chaque semaine.</p>
+    </div>
+    <div>
+      <h3>Liens</h3>
+      <ul>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/carte-des-cafes.pdf">Carte des cafés (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Infolettre</h3>
+      <p>Nouveautés et micro-lots, une fois par mois.</p>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" name="email" placeholder="Votre courriel" required aria-label="Courriel">
+        <button type="submit" class="btn btn-accent">S'abonner</button>
+      </form>
+      <p class="newsletter-success" hidden>Merci! Vous êtes maintenant sur la liste.</p>
+    </div>
+  </div>
+  <p class="footer-legal">© 2026 Brûlerie Boréale. Site fictif conçu à des fins de formation en analytics.</p>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner" hidden>
+  <p>Nous utilisons des témoins (cookies) pour mesurer l'audience et améliorer votre expérience.</p>
+  <div>
+    <button class="btn btn-accent" id="cookie-accept">Tout accepter</button>
+    <button class="btn btn-ghost" id="cookie-refuse">Refuser</button>
+  </div>
+</div>
+
+<script src="js/catalog.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/checkout.js"></script>
+</body>
+</html>

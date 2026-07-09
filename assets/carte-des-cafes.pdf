@@ -1,0 +1,53 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+5 0 obj
+<< /Length 920 >>
+stream
+BT /F1 11 Tf 1 0 0 1 60 760 Tm 16 TL
+(Brulerie Boreale - Carte des cafes) Tj T*
+() Tj T*
+(CAFES ESPRESSO) Tj T*
+(  Espresso Nordique ....... 18,50 $   chocolat noir, noisette) Tj T*
+(  Espresso Taiga ........... 21,00 $   cerise, cacao, erable) Tj T*
+() Tj T*
+(CAFES FILTRE) Tj T*
+(  Filtre du Fjord .......... 17,00 $   pomme verte, miel, amande) Tj T*
+(  Filtre Aurore ............ 16,50 $   agrumes, the noir, caramel) Tj T*
+(  Melange du Trappeur ...... 15,75 $   noix grillees, cacao) Tj T*
+() Tj T*
+(DECAFEINE) Tj T*
+(  Decaf Minuit ............. 19,00 $   chocolat au lait, raisin sec) Tj T*
+() Tj T*
+(MICRO-LOTS) Tj T*
+(  Ethiopie Guji ............ 24,00 $   bleuet, jasmin, citron confit) Tj T*
+(  Colombie Huila ........... 23,50 $   panela, orange sanguine) Tj T*
+() Tj T*
+(Livraison gratuite des 50 $ partout au Canada.) Tj T*
+(www.brulerie-boreale.example - document fictif \(formation analytics\)) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000309 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1280
+%%EOF
