@@ -1,9 +1,9 @@
 // Configuration globale du site
-// IMPORTANT : remplacer gtmId par l'ID du conteneur GTM sandbox (format GTM-XXXXXXX).
+// IMPORTANT : remplacer gtmId par l'ID du conteneur GTM sandbox (format GTM-TPZQD2PT).
 // Le même ID doit aussi être remplacé dans les balises <noscript> de chaque page HTML
 // (voir README.md pour une commande qui fait tout d'un coup).
 window.BB_CONFIG = {
-  gtmId: 'GTM-XXXXXXX',
+  gtmId: 'GTM-TPZQD2PT',
   currency: 'CAD',
   brand: 'Brûlerie Boréale',
   freeShippingThreshold: 50,
