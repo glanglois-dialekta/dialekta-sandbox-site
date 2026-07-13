@@ -34,6 +34,6 @@ Implanter la mesure GA4 complète du site via Google Tag Manager, selon le plan 
 
 ## Contraintes
 
-- Le client est au Québec : la conformité à la Loi 25 est un enjeu. Une bannière de consentement est en place et pousse le choix de l'utilisateur dans le dataLayer; la configuration du Consent Mode dans GTM fait partie des attentes (phase 2 acceptable).
+- Le client est au Québec : la conformité à la Loi 25 est un enjeu. La mise en place d'une plateforme de gestion du consentement (CMP) est prévue dans une phase ultérieure du mandat.
 - Aucun renseignement personnel (courriel, nom, adresse) ne doit se retrouver dans GA4.
 - Devise : dollar canadien (CAD).

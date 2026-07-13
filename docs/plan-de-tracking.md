@@ -72,12 +72,6 @@ Le `user_id` est un identifiant haché (jamais le courriel). À utiliser pour la
 | `video_complete` | Fin de la vidéo | mêmes paramètres |
 | `file_download` | Clic sur la carte des cafés (PDF) | `file_name`, `file_extension`, `link_url` |
 
-## 8. Consentement
-
-| Événement | Quand | Paramètres |
-|---|---|---|
-| `cookie_consent_update` | Choix dans la bannière, puis à chaque page si un choix existe | `consent_source` (`banner`/`stored`), `analytics_storage`, `ad_storage`, `ad_user_data`, `ad_personalization` (`granted`/`denied`) |
-
 ## Conversions recommandées dans GA4
 
 | Événement | Justification |
@@ -111,6 +105,6 @@ Le `user_id` est un identifiant haché (jamais le courriel). À utiliser pour la
 7. Ajouter les événements vidéo et `file_download`.
 8. Mettre en place User-ID à partir de `user_id` (événements `login`/`sign_up` et `page_metadata`).
 9. Créer les dimensions personnalisées et vérifier qu'elles se remplissent (délai de 24 h dans les rapports; visibles tout de suite dans DebugView).
-10. Défi avancé : configurer le Consent Mode v2 à partir de `cookie_consent_update` (état par défaut « denied » + mise à jour selon le choix).
+10. Défi avancé : sortir du dataLayer et utiliser les déclencheurs natifs GTM, par exemple la profondeur de défilement (paliers 50 % et 90 %) sur les articles du blogue.
 
-Exercices bonus possibles avec les déclencheurs natifs GTM (sans dataLayer) : profondeur de défilement sur les articles du blogue, minuterie d'engagement, clics sortants.
+Autres exercices bonus avec les déclencheurs natifs : minuterie d'engagement, clics sortants.

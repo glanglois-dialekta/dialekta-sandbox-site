@@ -209,18 +209,6 @@ section { margin-bottom: 3rem; }
 .newsletter-success { color: #9fd4b5; font-weight: 600; }
 .footer-legal { max-width: 1080px; margin: 2rem auto 0; font-size: 0.8rem; opacity: 0.6; text-align: center; }
 
-/* Bannière de consentement */
-.cookie-banner {
-  position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%);
-  width: min(680px, calc(100% - 2rem)); background: var(--ink); color: var(--cream);
-  border-radius: var(--radius); padding: 1.2rem 1.5rem; z-index: 100;
-  display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-}
-.cookie-banner[hidden] { display: none; }
-.cookie-banner p { margin: 0; font-size: 0.92rem; }
-.cookie-banner div { display: flex; gap: 0.6rem; }
-
 /* Divers */
 .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.2rem; }
 .section-header a { font-size: 0.92rem; }

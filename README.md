@@ -1,6 +1,6 @@
 # Brûlerie Boréale - Site de pratique analytics
 
-Site e-commerce fictif (torréfacteur québécois) conçu comme environnement de formation GTM/GA4. Tout est statique : aucun backend, aucune dépendance, hébergeable tel quel sur GitHub Pages. Le site pousse plus de 25 événements dans le `dataLayer` (e-commerce GA4 complet, leads, vidéo, consentement, etc.); le conteneur GTM est vide au départ et c'est à la personne en formation de tout configurer.
+Site e-commerce fictif (torréfacteur québécois) conçu comme environnement de formation GTM/GA4. Tout est statique : aucun backend, aucune dépendance, hébergeable tel quel sur GitHub Pages. Le site pousse plus de 20 événements dans le `dataLayer` (e-commerce GA4 complet, leads, vidéo, etc.); le conteneur GTM est vide au départ et c'est à la personne en formation de tout configurer.
 
 ## Documents
 
@@ -61,7 +61,7 @@ js/tracking.js             Helpers dataLayer (pageMeta, dlPush, toItem)
 js/gtm-loader.js           Snippet GTM officiel paramétré
 js/catalog.js              Catalogue produits (12 produits) et visuels SVG
 js/cart.js                 Panier localStorage + événements e-commerce
-js/main.js                 Infolettre, CTA, téléchargements, bannière de consentement
+js/main.js                 Infolettre, CTA, téléchargements de fichiers
 js/pages/*.js              Logique et tracking propres à chaque page
 docs/                      Brief client et plan de tracking
 ```

@@ -50,37 +50,4 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-
-  // Bannière de consentement (simplifiée, à des fins de formation).
-  // Le choix est poussé dans le dataLayer pour alimenter le Consent Mode dans GTM.
-  var banner = document.getElementById('cookie-banner');
-  if (banner) {
-    var stored = localStorage.getItem('bb_consent');
-    if (stored) {
-      pushConsent(stored, 'stored');
-    } else {
-      banner.hidden = false;
-    }
-    var accept = document.getElementById('cookie-accept');
-    var refuse = document.getElementById('cookie-refuse');
-    if (accept) accept.addEventListener('click', function () { chooseConsent('granted'); });
-    if (refuse) refuse.addEventListener('click', function () { chooseConsent('denied'); });
-  }
-
-  function chooseConsent(state) {
-    localStorage.setItem('bb_consent', state);
-    banner.hidden = true;
-    pushConsent(state, 'banner');
-  }
-
-  function pushConsent(state, source) {
-    BB.dlPush({
-      event: 'cookie_consent_update',
-      consent_source: source,
-      analytics_storage: state,
-      ad_storage: state,
-      ad_user_data: state,
-      ad_personalization: state
-    });
-  }
 });
